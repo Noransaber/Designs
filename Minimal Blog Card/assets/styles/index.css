@@ -1,0 +1,56 @@
+:root {
+  --purple-color: #883ae1;
+  --light-purple-color: #e6d6fc;
+  --dark-white-color: #e5eaf0;
+  --white-color: #fafaf9;
+  --whiter-white-color: #ffffff;
+  --dark-blue-color: #20293a;
+  --dark-gray-color: #6c727f;
+}
+body {
+  font-family: 'Sora', sans-serif;
+}
+.blog {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.blog .card {
+  padding: 13px;
+  border-radius: 20px;
+  width: 365px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.card-body {
+  border-bottom: 1px solid var(--dark-white-color);
+}
+.blog .card .card-img-top {
+  border-radius: 20px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.design {
+  background-color: var(--light-purple-color);
+  color: var(--purple-color);
+  font-size: 0.625rem;
+  padding: 5px 22px;
+  border-radius: 39px;
+}
+.card-title {
+  margin-top: 25px;
+  color: var(--dark-blue-color);
+  font-size: 1.125rem;
+}
+.card-text {
+  color: var(--dark-gray-color);
+  font-size: 0.75rem;
+}
+
+.name {
+  font-size: 0.625rem;
+  color: #6c727f;
+  margin-top: 10px;
+  margin-left: 16px;
+}
