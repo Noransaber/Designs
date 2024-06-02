@@ -1,0 +1,73 @@
+:root {
+  --blue-color: #2a4dd0;
+  --green-color: #4ca154;
+  --dark-blue-color: #111729;
+  --betroly-color: #223344;
+  --gray-color: #909193;
+  --white-color: #f2f9fe;
+  --whiter-color: #ffffff;
+}
+body {
+  font-family: 'Poppins';
+  background-color: var(--white-color);
+}
+
+.navbar {
+  padding: 20px;
+}
+.nav-link {
+  color: var(--gray-color);
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+.active {
+  color: var(--dark-blue-color);
+}
+.nav-item {
+  margin-left: 20px;
+}
+/* Landing section */
+.text {
+  margin-top: 50px;
+  width: 73%;
+}
+.text-1,
+.text-2 {
+  color: var(--betroly-color);
+}
+.text-1 {
+  font-size: 0.875rem;
+}
+.text-2 {
+  font-size: 3.75rem;
+  font-weight: 700;
+}
+.text-3 {
+  font-size: 0.875rem;
+  color: var(--gray-color);
+  width: 396px;
+}
+
+.start {
+  margin-right: 20px;
+  padding: 10px 15px 10px 15px;
+  background: var(--blue-color);
+  color: var(--bs-body-bg);
+  border-radius: 10px;
+  font-size: 1rem;
+}
+.demo {
+  color: var(--blue-color);
+}
+.landing-img {
+  width: 550px;
+  height: 550px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .text-2 {
+    width: 742px;
+  }
+  .landing-img {
+    margin-top: 50px;
+  }
+}

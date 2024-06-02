@@ -1,0 +1,139 @@
+.container {
+  /* background-color: #204482; */
+  /* background: linear-gradient([direction], [color-stop1], [color-stop2], ...);
+   */
+}
+.login-box {
+  background-color: #010a1a;
+  max-width: 900px;
+  width: 80%;
+  border-radius: 20px;
+  color: white;
+}
+h1 {
+  color: white;
+}
+form {
+  width: 100%;
+}
+.form-control {
+  background-color: transparent;
+}
+label {
+  color: white;
+  font-size: 10px;
+}
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  background: linear-gradient(145deg, #010a1a, #010a1a);
+  box-shadow: 1px 1px 13px #010a1a, -1px 10px 5px #545b78;
+  box-shadow: 1px 1px 13px #010a1a, -1px 10px 5px #545b78;
+  color: rgb(161, 161, 161);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  background: linear-gradient(145deg, #010a1a, #010a1a);
+}
+input:focus {
+  border: none;
+  border-bottom: 1px solid white;
+  font-size: 10px;
+}
+input::placeholder,
+input:focus {
+  color: white;
+  font-size: 10px;
+}
+input[type='submit'][value='Login'] {
+  height: 50px;
+  margin: 5px;
+  width: 120px;
+  background: #010a1a;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: Consolas, Courier New, monospace;
+  border: solid #404c5d 1px;
+  font-size: 10px;
+  margin-left: 17px;
+  color: rgb(161, 161, 161);
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #010a1a, #010a1a);
+  -webkit-box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b, inset 5px 5px 10px #010a1a, inset -5px -5px 10px #010a1a;
+  box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b, inset 5px 5px 10px #010a1a, inset -5px -5px 10px #010a1a;
+}
+input[type='submit'][value='Login'] {
+  -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+  box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+  color: #d6d6d6;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+input[type='submit'][value='Login'] {
+  -webkit-box-shadow: 1px 1px 13px #010a1a, -1px -1px 33px #545b78;
+  box-shadow: 1px 1px 13px #010a1a, -1px -1px 33px #545b78;
+  color: #d6d6d6;
+  -webkit-transition: 100ms;
+  transition: 100ms;
+}
+@media (max-width: 768px) {
+  .login-box {
+    background-color: #010a1a;
+    max-width: 900px;
+    width: 100%;
+    border-radius: 20px;
+    color: white;
+  }
+  input {
+    width: 100%;
+  }
+  input:focus,
+  input::placeholder {
+    font-size: 10px;
+  }
+  input[type='submit'][value='Login'] {
+    font-size: 10px;
+    max-width: 500px;
+    margin-left: 5%;
+    width: 90%;
+  }
+  label {
+    font-size: 10px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1999px) {
+  .login-box {
+    max-width: 960px;
+    width: 60%;
+  }
+  label {
+    font-size: 12px;
+  }
+  input:focus,
+  input::placeholder {
+    font-size: 12px;
+  }
+}
+@media (min-width: 1200px) {
+  .login-box {
+    width: 50%;
+  }
+  label {
+    font-size: 15px;
+  }
+  input:focus,
+  input::placeholder {
+    font-size: 15px;
+  }
+  input[type='submit'][value='Login'] {
+    font-size: 15px;
+  }
+}
