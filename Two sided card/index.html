@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- i forgot to include the jq cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Two sided card</title>
+  </head>
+  <!-- We will create 3 card, one will flip to the back by hovering, one by clicking, one by clicking a button -->
+  <body>
+    <div class="display-container">
+      <div class="display">
+        <div class="display-item">
+          <h2>Hover</h2>
+          <div class="card hover">
+            <div class="front">
+              <div class="card-header">
+                <h1>Card Front Header</h1>
+              </div>
+              <div class="card-body"></div>
+            </div>
+            <div class="back">
+              <div class="card-header">
+                <h1>Card Back Header</h1>
+              </div>
+              <div class="card-body">
+                <h2>Feature List</h2>
+                <ul>
+                  <li>Feature 1</li>
+                  <li>Feature 2</li>
+                  <li>Feature 3</li>
+                  <li>Feature 4</li>
+                </ul>
+              </div>
+              <div class="card-footer">
+                <div class="c2a">
+                  <a>Action</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second card -->
+
+        <div class="display-item">
+          <h2>Click (CheckBox)</h2>
+          <div class="card check">
+            <label>
+              <input type="checkbox" name="flip" />
+              <div class="front">
+                <div class="card-header">
+                  <h1>Card Front Header</h1>
+                </div>
+                <div class="card-body"></div>
+              </div>
+              <div class="back">
+                <div class="card-header">
+                  <h1>Card Back Header</h1>
+                </div>
+                <div class="card-body">
+                  <h2>Feature List</h2>
+                  <ul>
+                    <li>Feature 1</li>
+                    <li>Feature 2</li>
+                    <li>Feature 3</li>
+                    <li>Feature 4</li>
+                  </ul>
+                </div>
+                <div class="card-footer">
+                  <div class="c2a">
+                    <a>Action</a>
+                  </div>
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- Third card -->
+
+        <div class="display-item">
+          <h2>Click (flip Button)</h2>
+          <div class="card jq">
+            <div class="front">
+              <div class="card-header">
+                <h1>Card Front Header</h1>
+              </div>
+              <div class="card-body">
+                <div class="flipper">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                      d="M19,8L15,12H18A6,6 0 0,1 12,18C11,18 10.03,17.75 9.2,
+                                   17.3L7.74,18.76C8.97,19.54 10.43,20 12,20A8,8 0 0,0 20,12H23M6,
+                                   12A6,6 0 0,1 12,6C13,6 13.97,6.25 14.8,6.7L16.26,5.24C15.03,
+                                   4.46 13.57,4 12,4A8,8 0 0,0 4,12H1L5,16L9,12"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="back">
+              <div class="card-header">
+                <h1>Card Back Header</h1>
+              </div>
+              <div class="card-body">
+                <h2>Feature List</h2>
+                <ul>
+                  <li>Feature 1</li>
+                  <li>Feature 2</li>
+                  <li>Feature 3</li>
+                  <li>Feature 4</li>
+                </ul>
+                <div class="flipper">
+                  <svg width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                      d="M19,8L15,12H18A6,6 0 0,1 12,18C11,18 10.03,17.75 9.2,
+                                     17.3L7.74,18.76C8.97,19.54 10.43,20 12,20A8,8 0 0,0 20,12H23M6,
+                                     12A6,6 0 0,1 12,6C13,6 13.97,6.25 14.8,6.7L16.26,5.24C15.03,
+                                     4.46 13.57,4 12,4A8,8 0 0,0 4,12H1L5,16L9,12"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="card-footer">
+                <div class="c2a">
+                  <a>Action</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
